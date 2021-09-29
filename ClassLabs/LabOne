@@ -1,4 +1,4 @@
-public class HelloWorld{
+public class LabOne{
     public static void main(String name[]){
         int num1 = 10;
         int num2 = 26;
@@ -60,7 +60,7 @@ public class HelloWorld{
         if(age >= 18){
             System.out.println("You can vote");
         }else{
-            System.out.println("You can't vote, come back when you're 18");
+            System.out.println("You are too young to vote. You must be 18 years old");
         }
    }    
 }
