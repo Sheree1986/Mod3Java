@@ -36,9 +36,17 @@ public static void main(String[] args) {
 		int userjobId = scan.nextInt();
 		
 		
-	
+		System.out.println("Enter a number between 1 and 12:");
+		int usernumber = scan.nextInt();
+		
+		System.out.println("Please Enter your bonus for the year");
+		int userBonus = scan.nextInt();
+		
+		System.out.println("Please enter the current year");
+		int userValidation = scan.nextInt();
+
 		System.out.println("Enter your salary:");
-		long userSalary = scan.nextLong();
+		double userSalary = scan.nextInt();
 
 	
 	
@@ -56,11 +64,11 @@ public static void main(String[] args) {
 		scan.close();
 		
 		
-		Employee emp1 = new Employee(userName, userAddress, userPhone, userjobId, userDepartment, userSalary);
+		Employee emp1 = new Employee(userName, userAddress, userPhone, userjobId, userBonus, userValidation, userDepartment, userSalary);
 		emp1.display();
 
 	
-		Student stu1 = new Student(userName, userAddress, userPhone, userGrade, userCss, userJavascript, userJava);
+		Student stu1 = new Student(userName, userAddress, userPhone, userGrade, userCss, userJavascript, userJava, usernumber);
 		stu1.display();
 		
 	
